@@ -16,3 +16,13 @@ class Dog:
 dog1 = Dog("Buddy", "Golden Retriever")
 print(f"{dog1.name} is a {dog1.breed}")
 
+# Class with Method
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print(f"Hello, my name is {self.name}")
+
+person1 = Person("Alice")
+person1.greet()
