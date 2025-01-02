@@ -17,3 +17,14 @@ class Rectangle:
 
 rect = Rectangle(5, 10)
 print(f"Rectangle has width {rect.width} and height {rect.height}")
+
+# Object Initialization with Validation
+class Person:
+    def __init__(self, age):
+        if age < 0:
+            print("Age cannot be negative.")
+        else:
+            self.age = age
+
+person1 = Person(-5)
+person2 = Person(30)
